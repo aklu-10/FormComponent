@@ -1,0 +1,152 @@
+.formContainer
+{
+    width:500px;
+    min-height: max-content;
+    padding:40px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 10px;
+    background-color: white;
+    color:rgba(0,0,0,.9);
+}
+
+.formContainer h1
+{
+    margin-bottom:30px;
+}
+
+
+.formContainer .formField
+{
+    width:95%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom:18px;
+}
+
+.formContainer .formField label
+{
+    font-weight:400;
+    margin-bottom:4px;
+}
+
+.formContainer .formField .checkboxFields
+{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap:wrap;
+    align-items: center;
+}
+
+.formContainer .formField .checkboxFields .formfield,
+.formContainer .formField .radioFields .formfield
+{
+    margin-right:12px;
+    padding:8px;
+}
+
+
+.formContainer .formField .checkboxFields .formfield label,
+.formContainer .formField .radioFields .formfield label
+{
+    user-select: none;
+}
+
+.formContainer .formField .checkboxFields .formfield input,
+.formContainer .formField .radioFields .formfield input
+{
+    margin-right:10px;
+}
+
+
+.formContainer .formField input,
+.formContainer .formField select
+{
+    border:1px solid lightgray;
+    border-radius: 6px;
+}
+
+.formContainer .formField input,
+.formContainer .formField select,
+.formContainer .formField button
+{
+    padding:8px;
+}
+
+.formContainer .buttonContainer
+{
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formContainer .formField button
+{
+   font-weight:400;
+   font-size:.8rem;
+   background-image: linear-gradient(25deg, var(--primary), var(--secondary));
+   border:none;
+   border-radius: 50px;
+   color:white;
+   height:35px;
+   box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+}
+
+
+.formContainer .formField .fileInput
+{
+    width:98%;
+    height:60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    border:1px solid lightgray;
+    border-radius: 6px;
+}
+
+.formContainer .formField .fileInput .fileImage
+{
+    width:20%;
+}
+
+.formContainer .formField .fileInput .fileImage img
+{
+    width:100%;
+    height: 60px;
+    object-fit: cover;
+}
+
+
+.formContainer .formField .fileInput .fileName
+{
+    padding-right:20px;
+    width:80%;
+    padding:8px;
+}
+
+.formContainer .formField .fileInput .fileName p
+{
+    word-break: break-word;
+}
+
+
+.formContainer .formField input:focus,
+.formContainer .formField select:focus
+{
+    outline:none;
+    box-shadow: 0 0 2px rgba(0,0,0,.5);
+}
+
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+:root
+{
+    --primary:#0081ec;
+    --secondary:#01a3f2;
+}
+
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: system-ui;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--secondary);
+}
