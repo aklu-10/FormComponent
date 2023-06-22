@@ -7,10 +7,15 @@ import File from '../File/File'
 
 const Field = (props) => {
 
+    function getFileSetter(func)
+    {
+        props.getFileStateAndSetter(func);
+    }
+
     switch(props.control)
     {
         case 'input':
-            return props.type==="file" ? <File {...props}/> : <Input {...props}/> 
+            return props.type==="file" ? <File getFileSetter={getFileSetter} {...props}/> : <Input {...props}/> 
         
         case 'select':
             return <Select {...props}/> 

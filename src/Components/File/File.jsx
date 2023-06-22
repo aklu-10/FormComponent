@@ -8,6 +8,8 @@ const File = (props) => {
     const [source, setSource] = useState('/uploadImage.jpg');
     const [fileName, setFileName] = useState('');
 
+    props.getFileSetter({setSource,setFileName});
+
     const fileInpRef = useRef(null);
 
     const {formData, setFormData} = useContext(FormContext); 

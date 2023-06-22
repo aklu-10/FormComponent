@@ -1,13 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Form from './Components/Form/Form'
 import Field from './Components/Field/Field'
 import './App.css';
 
 const App = () => {
 
+  const [fileSetters, setFileSetters] = useState({});
+
+  function getFileStateAndSetter(func)
+  {
+    setFileSetters(func.setSource, setFileName);
+  }
+
    return (
-      <Form heading={"Sign Up"}>
-          <Field
+      <Form fileSetters={fileSetters} heading={"Sign Up"}>
+          <Field 
           control="input"
           type="text"
           fieldName="firstName"
@@ -21,7 +28,7 @@ const App = () => {
           label="Last Name"
            />
 
-          <Field
+          <Field getFileStateAndSetter={getFileStateAndSetter}
           control="input"
           type="file"
           fieldName="file"
